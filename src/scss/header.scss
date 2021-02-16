@@ -1,0 +1,156 @@
+.container {
+  max-width: 1168px;
+  margin: auto;
+}
+.header {
+  width: 100%;
+  background-color: #263238;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-top: 27px;
+    padding-bottom: 24px;
+  }
+  &__info {
+    display: inline-block;
+    font-size: 15px;
+    color: #546e7a;
+    margin-right: 29px;
+    span {
+      color: #e95c4e;
+    }
+    a {
+      color: #546e7a;
+    }
+  }
+  &__body {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+  }
+}
+.fa-shopping-cart {
+  color: #bdbdbd;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  padding: 12px 10px;
+  margin-right: 26px;
+}
+.button {
+  &--login {
+    color: #fff;
+    background-color: #abd37b;
+    padding: 11px 20px;
+    border-radius: 5%;
+    margin-right: 7px;
+  }
+  &--register {
+    color: #fff;
+    background-color: #e95c4e;
+    padding: 11px 20px;
+    border-radius: 5%;
+  }
+}
+.header__list li {
+  list-style: none;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 30px 30px;
+  }
+  .header__burger {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    right: 0;
+  }
+  .header__burger:after,
+  .header__burger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:after {
+    bottom: 0;
+    margin-left: 6px;
+    width: 80%;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger.active {
+    top: -80px;
+  }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #263238;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin-bottom: 20px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .header__link {
+    font-size: 24px;
+  }
+}

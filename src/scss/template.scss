@@ -1,0 +1,32 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 78px;
+}
+.subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.filter__item.actived {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+.fa-star {
+  color: #ffa726;
+  margin-top: 10px;
+}
+.button {
+  display: inline-block;
+  color: #263238;
+  background-color: #fff;
+  padding: 21px 33px;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 500;
+}

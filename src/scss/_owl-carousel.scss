@@ -1,0 +1,31 @@
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 60px;
+}
+
+.owl-dot {
+  outline: none;
+  span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    background-color: #e6e6e6;
+    margin-right: 4px;
+  }
+}
+
+.owl-dot.active {
+  span {
+    display: inline-block;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #8bc34a;
+    background-color: #8bc34a;
+  }
+}
