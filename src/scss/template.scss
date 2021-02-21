@@ -20,6 +20,24 @@
   color: #ffa726;
   margin-top: 10px;
 }
+.fa-map-marker-alt,
+.fa-phone-alt {
+  color: #597b41;
+  margin-right: 20px;
+}
+.fa-chevron-right {
+  color: #597b41;
+  font-size: 10px;
+  margin-right: 16px;
+}
+.fa-telegram-plane {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #ffffff;
+}
 .button {
   display: inline-block;
   color: #263238;
@@ -29,4 +47,7 @@
   font-size: 16px;
   margin-right: 10px;
   font-weight: 500;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

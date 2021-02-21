@@ -16,6 +16,7 @@
   margin: auto;
   text-align: center;
 }
+
 .search__form {
   position: relative;
 }
@@ -48,6 +49,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 59px;
+    @media only screen and (max-width: 767px) {
+      display: inline-block;
+      columns: 3;
+    }
+    @media only screen and (max-width: 460px) {
+      columns: 2;
+    }
   }
   &__item {
     margin-right: 6px;
@@ -59,6 +67,9 @@
     &:hover {
       cursor: pointer;
     }
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 }
 .product {
@@ -68,6 +79,7 @@
 
   @media only screen and (max-width: 767px) {
     flex-direction: column;
+    align-items: center;
   }
   @media only screen and (max-width: 1040px) {
     flex-wrap: wrap;
@@ -163,7 +175,7 @@
   &__title {
     font-size: 36px;
     color: #fff;
-    line-height: 27px;
+    line-height: 34px;
     text-transform: capitalize;
     margin-bottom: 88px;
   }
@@ -238,8 +250,8 @@
     }
   }
   &__button {
+    margin: auto;
     @media only screen and (max-width: 767px) {
-      margin: auto;
       width: 225px;
     }
   }
@@ -264,6 +276,7 @@
   justify-content: space-between;
   @media only screen and (max-width: 767px) {
     flex-direction: column;
+    align-items: center;
   }
   &__item {
     max-width: 440px;
@@ -306,11 +319,18 @@
     justify-content: space-between;
     max-width: 1188px;
     margin: auto;
+    margin-bottom: 98px;
+    @media only screen and (max-width: 1040px) {
+      flex-wrap: wrap;
+    }
   }
   &__title {
     color: #fff;
     font-size: 22px;
     font-weight: 500;
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
     &:after {
       content: "";
       display: block;
@@ -327,5 +347,58 @@
     color: #b7c3c8;
     max-width: 259px;
     margin-bottom: 32px;
+  }
+  &__address {
+    display: inline-block;
+    color: #fff;
+    max-width: 245px;
+    margin: auto;
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+  &__contact {
+    display: flex;
+  }
+  &__tel {
+    color: #fff;
+    font-size: 14px;
+  }
+  &__item {
+    margin-bottom: 25px;
+  }
+  &__link {
+    color: #b7c3c8;
+    font-size: 15px;
+  }
+  &__info {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+  }
+  &__input {
+    background-color: #2f3c43;
+    padding: 14px;
+    width: 90%;
+  }
+  &__form {
+    position: relative;
+  }
+  &__icon {
+    height: 43px;
+    width: 43px;
+    line-height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #7eb143;
+  }
+  &__line {
+    border-top: 1px solid #546e7a;
+    padding-top: 27px;
+  }
+  &__meta {
+    color: #919699;
+    text-align: center;
   }
 }

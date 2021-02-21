@@ -19,6 +19,9 @@
     font-size: 15px;
     color: #546e7a;
     margin-right: 29px;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
     span {
       color: #e95c4e;
     }
@@ -41,6 +44,12 @@
     text-transform: capitalize;
     text-decoration: none;
     position: relative;
+  }
+  &__contact {
+    @media only screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 .fa-shopping-cart {
