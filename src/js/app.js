@@ -1,3 +1,14 @@
+$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock')
+    });
+     });
+
+$( ".filter__item" ).on( "click", function() {
+    $(this).toggleClass('actived');
+});
+
 $('#carousel-products').owlCarousel({
     loop:true,
    nav: false,
@@ -15,8 +26,5 @@ $('#carousel-products').owlCarousel({
 });
 
 
-$( ".filter__item" ).on( "click", function() {
-    $(this).toggleClass('actived');
-});
 
    

@@ -52,28 +52,6 @@
     }
   }
 }
-.fa-shopping-cart {
-  color: #bdbdbd;
-  background-color: #f4f4f4;
-  border-radius: 50%;
-  padding: 12px 10px;
-  margin-right: 26px;
-}
-.button {
-  &--login {
-    color: #fff;
-    background-color: #abd37b;
-    padding: 11px 20px;
-    border-radius: 5%;
-    margin-right: 7px;
-  }
-  &--register {
-    color: #fff;
-    background-color: #e95c4e;
-    padding: 11px 20px;
-    border-radius: 5%;
-  }
-}
 .header__list li {
   list-style: none;
   margin-right: 20px;
@@ -161,5 +139,20 @@
   }
   .header__link {
     font-size: 24px;
+  }
+}
+.button {
+  &--login {
+    color: #fff;
+    background-color: #abd37b;
+    padding: 11px 20px;
+    border-radius: 5%;
+    margin-right: 7px;
+  }
+  &--register {
+    color: #fff;
+    background-color: #e95c4e;
+    padding: 11px 20px;
+    border-radius: 5%;
   }
 }
