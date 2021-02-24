@@ -1,13 +1,24 @@
+function selectOneFilter () {
+    for (let filterButton of filterButtons) {
+        filterButton.classList.remove('actived');
+    }
+
+    this.classList.add('actived');
+}
+
+let filterButtons = document.querySelectorAll('.filter__item');
+
+for (let filterButton of filterButtons) {
+    filterButton.addEventListener('click', selectOneFilter);
+}
+
+
 $(document).ready(function(){
     $('.header__burger').click(function(event){
         $('.header__burger, .header__menu').toggleClass('active');
         $('body').toggleClass('lock')
     });
      });
-
-$( ".filter__item" ).on( "click", function() {
-    $(this).toggleClass('actived');
-});
 
 $('#carousel-products').owlCarousel({
     loop:true,
