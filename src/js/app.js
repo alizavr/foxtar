@@ -19,7 +19,15 @@ $(document).ready(function(){
         $('body').toggleClass('lock')
     });
      });
+     $(document).ready(function(){
+        $('.button_page').click(function(event){
+            $(this).toggleClass('active');
+            $('body').toggleClass('lock')
+        });
+         });
 
+
+         
 $('#carousel-products').owlCarousel({
     loop:true,
    nav: false,

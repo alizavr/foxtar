@@ -21,6 +21,7 @@
 }
 
 .search__form {
+  display: block;
   position: relative;
   z-index: 1;
 }
@@ -80,9 +81,11 @@
   }
 }
 .product {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   margin-bottom: 30px;
+  display: inline-block;
+  columns: 3;
 
   @media only screen and (max-width: 808px) {
     flex-direction: column;
@@ -90,11 +93,16 @@
   }
   @media only screen and (max-width: 1040px) {
     flex-wrap: wrap;
+    columns: 2;
+  }
+  @media only screen and (max-width: 535px) {
+    columns: 1;
   }
   &__item {
     max-width: 440px;
     text-align: left;
     margin-right: 10px;
+    margin-bottom: 31px;
     @media only screen and (max-width: 1040px) {
       margin-bottom: 18px;
     }
@@ -115,22 +123,32 @@
     max-width: 192px;
   }
   &__description {
+    display: inline-block;
+    max-width: 200px;
+
     color: #8bc34a;
     font-size: 14px;
     margin-top: 17px;
     margin-bottom: 17px;
   }
   &__price {
+    display: inline-block;
+    max-width: 35px;
     font-weight: bold;
     color: $secondary-color;
     font-size: 20px;
     margin-bottom: 27px;
   }
   &__line {
-    display: block;
-    width: 100%;
-    border-top: 2px solid #f7f9f8;
-    margin-bottom: 17px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 19px;
+      margin-bottom: 29px;
+      height: 2px;
+      background-color: #e6f1f9;
+    }
   }
   &__text {
     display: flex;
@@ -143,11 +161,11 @@
   &__pic {
     display: inline-block;
     position: relative;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-color: $secondary-color;
     border-radius: 50%;
-    margin-right: 14px;
+    margin-right: 7px;
   }
   &__name {
     display: flex;
@@ -158,16 +176,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media only screen and (max-width: 1220px) {
-      flex-direction: column;
+    &_categories {
+      @media only screen and (max-width: 860px) {
+        flex-direction: column;
+      }
     }
+  }
+
+  &__star {
+    font-size: 10px;
+    margin-bottom: 10px;
   }
   &__stars {
     margin-top: 10px;
   }
   &__rating-amount {
     color: $secondary-color;
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: 12px;
   }
   &__hot {
     position: absolute;

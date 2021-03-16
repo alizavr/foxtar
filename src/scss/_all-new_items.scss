@@ -1,0 +1,223 @@
+.banner__search {
+  background-image: url(../img/dist/banner01.jpg);
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.input__border {
+  box-shadow: 3px 4px 18px 8px #999999;
+}
+.button--logout {
+  display: inline-block;
+  color: #fff;
+  background-color: #e95c4e;
+  padding: 11px 20px;
+  border-radius: 5%;
+  @media only screen and (max-width: 767px) {
+    padding: 11px 15px;
+  }
+}
+.page {
+  padding-top: 49px;
+  padding-bottom: 109px;
+  background-color: #f4f6f5;
+}
+.breadcrumb {
+  margin-bottom: 43px;
+  &__item {
+    display: inline-block;
+    &:not(:last-of-type)::after {
+      content: "-";
+      color: #8bc34a;
+      margin: 0 7px;
+    }
+  }
+  &__link {
+    color: #b0bec5;
+    font-size: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &--active {
+      color: #263238;
+      font-weight: 500;
+    }
+  }
+}
+.categories {
+  display: block;
+  padding: 26px 28px 42px 28px;
+  background-color: #fff;
+  border: 1px solid #c8c9c9;
+  margin-bottom: 15px;
+  &__title {
+    color: #263238;
+    font-size: 20px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 19px;
+      margin-bottom: 29px;
+      height: 2px;
+      background-color: #e6f1f9;
+    }
+  }
+  &__item {
+    margin-bottom: 29px;
+  }
+  &__link {
+    display: inline-block;
+    color: #263238;
+    font-size: 15px;
+    font-weight: 500;
+    width: 110px;
+  }
+  span {
+    display: inline-block;
+    color: #90a4ae;
+    width: 50px;
+    margin-left: 70px;
+    text-align: center;
+    @media only screen and (max-width: 1020px) {
+      display: inline;
+      margin-left: 15px;
+    }
+  }
+}
+
+.price_range {
+  display: block;
+  padding: 26px 28px 30px 28px;
+  background-color: #fff;
+  border: 1px solid #c8c9c9;
+  margin-bottom: 15px;
+  &__title {
+    color: #263238;
+    font-size: 20px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 19px;
+      margin-bottom: 29px;
+      height: 2px;
+      background-color: #e6f1f9;
+    }
+  }
+  &__button {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: #8bc34a;
+    margin-top: 35px;
+
+    color: #fff;
+    .fa-search {
+      color: #fff;
+      margin-right: -15px;
+    }
+  }
+}
+.sellers {
+  display: block;
+  padding: 26px 28px 30px 28px;
+  background-color: #fff;
+  border: 1px solid #c8c9c9;
+  &__title {
+    color: #263238;
+    font-size: 20px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 19px;
+      margin-bottom: 29px;
+      height: 2px;
+      background-color: #e6f1f9;
+    }
+  }
+  &__button {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: #8bc34a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+}
+.product_sellers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  &__content {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.product_page {
+  display: flex;
+  justify-content: space-between;
+  &__filter {
+    width: 30%;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__items {
+    width: 67%;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &_button {
+    padding-top: 237px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+}
+.sort {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
+  padding: 22px;
+  border: 1px solid #c8c9c9;
+  margin-bottom: 30px;
+  &__text {
+    display: inline-block;
+    color: #707070;
+    max-width: 150px;
+    font-size: 14px;
+    margin-right: 22px;
+    margin-left: 13px;
+  }
+}
+.fa-sort,
+.fa-list,
+.fa-sort-amount-down {
+  color: #707070;
+}
+.button_page {
+  display: inline-block;
+  color: #263238;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 12px 17px;
+  margin-right: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.button_page.active {
+  display: inline-block;
+  color: #fff;
+  background-color: #e74c3c;
+  font-size: 16px;
+  padding: 12px 17px;
+}

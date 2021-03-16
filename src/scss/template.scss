@@ -23,12 +23,15 @@ $secondary-color: #263238;
   color: $secondary-color;
   padding: 20px 20px 20px 20px;
 }
-.fa-shopping-cart {
+.fa-shopping-cart,
+.fa-bell,
+.fa-envelope {
   color: #bdbdbd;
   background-color: #f4f4f4;
+  font-size: 14px;
   border-radius: 50%;
-  padding: 12px 10px;
-  margin-right: 26px;
+  padding: 10px 10px;
+  margin-right: 20px;
   @media only screen and (max-width: 767px) {
     margin-right: 10px;
     margin-left: 10px;
@@ -56,6 +59,11 @@ $secondary-color: #263238;
   font-size: 15px;
   color: $main-color;
 }
+.fa-angle-right {
+  color: #8bc34a;
+  font-size: 14px;
+  margin-right: 13px;
+}
 .button {
   display: inline-block;
   color: $secondary-color;
@@ -68,4 +76,7 @@ $secondary-color: #263238;
   @media only screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
+}
+.hide {
+  display: none;
 }

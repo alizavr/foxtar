@@ -1,0 +1,36 @@
+.noUi-target {
+  background-color: #f9fafc;
+  height: 5px;
+
+  border: none;
+  box-shadow: none;
+  border-radius: 100px;
+}
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+.noUi-handle {
+  box-shadow: none;
+  border: 3px solid #8bc34a;
+  border-radius: 100%;
+  background-color: #ffff;
+}
+.noUi-horizontal .noUi-handle {
+  height: 16px;
+  width: 16px;
+}
+.noUi-connect {
+  background-color: #39464c;
+}
+.filters-prise__slider {
+  margin-bottom: 13px;
+}
+.noUi-horizontal .noUi-tooltip{
+  top: 150%;
+}
+.noUi-tooltip{
+  border: none;
+  font-size: 15px;
+  color: #78909c;
+}
