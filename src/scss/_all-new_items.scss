@@ -50,6 +50,7 @@
   background-color: #fff;
   border: 1px solid #c8c9c9;
   margin-bottom: 15px;
+  position: relative;
   &__title {
     color: #263238;
     font-size: 20px;
@@ -79,6 +80,8 @@
     width: 50px;
     margin-left: 70px;
     text-align: center;
+    position: absolute;
+    right: 20px;
     @media only screen and (max-width: 1020px) {
       display: inline;
       margin-left: 15px;
@@ -92,6 +95,14 @@
   background-color: #fff;
   border: 1px solid #c8c9c9;
   margin-bottom: 15px;
+  &_mobile{
+    @media only screen and (max-width: 2200px) {
+      display: none;
+    }
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
   &__title {
     color: #263238;
     font-size: 20px;
@@ -168,23 +179,25 @@
   }
   &__items {
     width: 67%;
+    position: relative;
     @media only screen and (max-width: 767px) {
       width: 100%;
       text-align: center;
     }
   }
   &_button {
-    padding-top: 237px;
+    position: absolute;
+    bottom: 0;
     @media only screen and (max-width: 767px) {
-      padding-top: 20px;
-      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
     }
   }
 }
 .sort {
   display: flex;
   justify-content: space-between;
-
   background-color: #fff;
   padding: 22px;
   border: 1px solid #c8c9c9;
