@@ -16,6 +16,9 @@
   @media only screen and (max-width: 767px) {
     padding: 11px 15px;
   }
+  @media only screen and (max-width: 605px){
+    display: none;
+  }
 }
 .page {
   padding-top: 49px;
@@ -234,3 +237,4 @@
   font-size: 16px;
   padding: 12px 17px;
 }
+

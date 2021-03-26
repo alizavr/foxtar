@@ -31,7 +31,8 @@ $secondary-color: #263238;
   font-size: 14px;
   border-radius: 50%;
   padding: 10px 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  position: relative;
   @media only screen and (max-width: 767px) {
     margin-right: 10px;
     margin-left: 10px;
@@ -79,4 +80,24 @@ $secondary-color: #263238;
 }
 .hide {
   display: none;
+}
+.numeral{
+ position: absolute;
+ z-index: 4;
+ right: 0;
+ bottom: 27px;
+ background-color: red;
+ padding: 3px 5px 3px 5px;
+ border-radius: 50%;
+ font-size: 11px;
+ color: #ffffff;
+}
+.numeral-bell{
+  background-color: #fdca67;
+}
+.numeral-envelope{
+  background-color: #f49a51;
+}
+.numeral-cart{
+  background-color: #b5d88c;
 }
